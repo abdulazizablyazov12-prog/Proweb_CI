@@ -42,7 +42,7 @@ def test_invalid_auth_chrome(driver_chrome):    # Chrome browser Negative Test
     sleep(2)
     auth_page.click_btn_login()
     sleep(2)
-    auth_page.enter_password("prowebqa!@#$")   # False password
+    auth_page.enter_password("prowebqa!@434#$")   # False password
     sleep(2)
     auth_page.click_btn_submit()
     sleep(2)
