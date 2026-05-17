@@ -10,11 +10,11 @@ def test_auth_chrome(driver_chrome):   # Chrome browser Positive Test
     auth_page = AuthPage(driver_chrome)
     auth_page.click_btn_uz()                     # Login page test
     sleep(2)
-    auth_page.enter_login("")
+    auth_page.enter_login("998998866405")
     sleep(2)
     auth_page.click_btn_login()
     sleep(2)
-    auth_page.enter_password("")
+    auth_page.enter_password("prowebqa!@#$")
     sleep(2)
     auth_page.click_btn_submit()
     sleep(2)
@@ -38,17 +38,17 @@ def test_invalid_auth_chrome(driver_chrome):    # Chrome browser Negative Test
     auth_page = AuthPage(driver_chrome)
     auth_page.click_btn_uz()
     sleep(2)
-    auth_page.enter_login("")       # True phone number
+    auth_page.enter_login("998998866405")       # True phone number
     sleep(2)
     auth_page.click_btn_login()
     sleep(2)
-    auth_page.enter_password("")   # False password
+    auth_page.enter_password("prowebqa!@#$")   # False password
     sleep(2)
     auth_page.click_btn_submit()
     sleep(2)
     auth_page.click_btn_back()
     sleep(2)
-    auth_page.enter_login("")       # False number test
+    auth_page.enter_login("998998866400")       # False number test
     sleep(2)
     auth_page.click_btn_login()
     sleep(2)
@@ -58,11 +58,11 @@ def test_auth_firefox(driver_firefox):      # FireFox browser Positive Test
     auth_page = AuthPage(driver_firefox)
     auth_page.click_btn_uz()                        # Login Page test
     sleep(2)
-    auth_page.enter_login("")
+    auth_page.enter_login("998998866405")
     sleep(2)
     auth_page.click_btn_login()
     sleep(2)
-    auth_page.enter_firefox_password("")
+    auth_page.enter_firefox_password("prowebqa!@#$")
     sleep(2)
     auth_page.click_btn_submit()
     sleep(2)
@@ -86,17 +86,17 @@ def test_invalid_auth_firefox(driver_firefox):    # FireFox browser Negative Tes
     auth_page = AuthPage(driver_firefox)
     auth_page.click_btn_uz()
     sleep(2)
-    auth_page.enter_login("")       # True phone number
+    auth_page.enter_login("998998866405")       # True phone number
     sleep(2)
     auth_page.click_btn_login()
     sleep(2)
-    auth_page.enter_firefox_password("")   # False password
+    auth_page.enter_firefox_password("1280!@#a123")   # False password
     sleep(2)
     auth_page.click_btn_submit()
     sleep(2)
     auth_page.click_btn_back()
     sleep(2)
-    auth_page.enter_login("")       # False number
+    auth_page.enter_login("998998866410")       # False number
     sleep(2)
     auth_page.click_btn_login()
     sleep(2)
@@ -106,11 +106,11 @@ def test_auth_safari(driver_safari):     # Safari browser Positive Test
     auth_page = AuthPage(driver_safari)
     auth_page.click_btn_uz()  # Login Page test
     sleep(2)
-    auth_page.enter_login("")
+    auth_page.enter_login("998998866405")
     sleep(2)
     auth_page.click_btn_login()
     sleep(2)
-    auth_page.enter_password("")
+    auth_page.enter_password("prowebqa!@#$")
     sleep(2)
     auth_page.click_btn_submit()
     sleep(2)
@@ -134,17 +134,17 @@ def test_invalid_auth_safari(driver_safari):    # Safari browser Negative Test
     auth_page = AuthPage(driver_safari)
     auth_page.click_btn_uz()
     sleep(2)
-    auth_page.enter_login("")       # True phone number
+    auth_page.enter_login("998998866405")       # True phone number
     sleep(2)
     auth_page.click_btn_login()
     sleep(2)
-    auth_page.enter_password("")   # False password
+    auth_page.enter_password("120!@#a123")   # False password
     sleep(2)
     auth_page.click_btn_submit()
     sleep(2)
     auth_page.click_btn_back()
     sleep(2)
-    auth_page.enter_login("")       # False number
+    auth_page.enter_login("998998866210")       # False number
     sleep(2)
     auth_page.click_btn_login()
     sleep(2)
