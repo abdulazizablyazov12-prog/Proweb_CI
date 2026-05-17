@@ -90,7 +90,7 @@ def test_invalid_auth_firefox(driver_firefox):    # FireFox browser Negative Tes
     sleep(2)
     auth_page.click_btn_login()
     sleep(2)
-    auth_page.enter_firefox_password("0!@#123qe")   # False password
+    auth_page.enter_firefox_password("0!@#21f3qe")   # False password
     sleep(2)
     auth_page.click_btn_submit()
     sleep(2)
