@@ -13,7 +13,7 @@ class AuthPage:
         self.dropdown_session = (By.CSS_SELECTOR, "#dialog > div > div > div > div.material-dialog__window-body.material-dialog__window-body_modify > div > div:nth-child(2) > div > div")
         self.btn_finish = (By.CSS_SELECTOR, "#dialog > div > div > div > div.material-dialog__window-body.material-dialog__window-body_modify > div > div:nth-child(2) > div.drop-down-component__content > div.sessions__item-content > button")
         self.btn_back = (By.CSS_SELECTOR, "#app > div > div > div > div.log-in__container > div > div.log-in__newContent-right > div > div.log-in__newContent-right-block-wrap > form > div.log-in__newContent-right-block-top > button")
-        self.firefox_password = (By.CSS_SELECTOR, ".material-input__input")  #FireFox
+        self.firefox_password = (By.CSS_SELECTOR, ".material-input__input")     # FireFox
 
     def click_btn_uz(self):
         wait = WebDriverWait(self.driver, 10)
