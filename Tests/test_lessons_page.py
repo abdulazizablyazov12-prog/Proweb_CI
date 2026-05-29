@@ -7,7 +7,12 @@ from pages.home_page import HomePage
 from pages.lessons_page import LessonsPage
 
 def test_lessons_page_chrome(driver_chrome):
-    driver_chrome.get('https://my.proweb.uz/log-in?q=/home')
+    try:
+        driver_chrome.get('https://my.proweb.uz/log-in?q=/home')
+    except TimeoutException:
+        print("Сайт не загрузился за 30 секунд, пробуем обновить страницу...")
+        driver_chrome.refresh()
+
     auth_page = AuthPage(driver_chrome)
     auth_page.click_btn_uz()                     # Login page
     sleep(2)
@@ -58,7 +63,12 @@ def test_lessons_page_chrome(driver_chrome):
     home_page.click_confirm_exit()
 
 def test_lessons_page_firefox(driver_firefox):
-    driver_firefox.get('https://my.proweb.uz/log-in?q=/home')
+    try:
+        driver_firefox.get('https://my.proweb.uz/log-in?q=/home')
+    except TimeoutException:
+        print("Сайт не загрузился за 30 секунд, пробуем обновить страницу...")
+        driver_firefox.refresh()
+
     auth_page = AuthPage(driver_firefox)
     auth_page.click_btn_uz()                     # Login page
     sleep(2)
@@ -109,7 +119,12 @@ def test_lessons_page_firefox(driver_firefox):
     home_page.click_confirm_exit()
 
 def test_lessons_page_safari(driver_safari):
-    driver_safari.get('https://my.proweb.uz/log-in?q=/home')
+    try:
+        driver_safari.get('https://my.proweb.uz/log-in?q=/home')
+    except TimeoutException:
+        print("Сайт не загрузился за 30 секунд, пробуем обновить страницу...")
+        driver_safari.refresh()
+
     auth_page = AuthPage(driver_safari)
     auth_page.click_btn_uz()                     # Login page
     sleep(2)
